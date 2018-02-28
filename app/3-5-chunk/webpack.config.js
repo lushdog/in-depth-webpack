@@ -24,6 +24,7 @@ module.exports = {
     ]
   },
   plugins: [
+    /** CommonsChunkPlugin已经被webpack 4 废弃 */
     new webpack.optimize.CommonsChunkPlugin({
       name: 'common',
       minChunks: 2,

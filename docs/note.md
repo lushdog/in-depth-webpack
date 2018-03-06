@@ -352,6 +352,59 @@ new ExtractTextWebpackPlugin({
 
 #### PostCSS
 
+##### A tool for transforming CSS with JavaScript
+
+##### 安装
+
+Postcss,
+
+postcss-loader,
+
+Autoprefixer:  浏览器厂商前缀
+
+postcss-cssnano: CSS压缩
+
+postcss-cssnext: 使用未来的css语法，css变量，自定义选择器，计算。
+
+```scss
+// cssnext 变量
+:root {
+  --mainColor: red;
+}
+a {
+  color: var(--mainColor)
+}
+```
+
+Broswerslist  写在package.json
+
+#### Tree Shaking
+
+##### JS Tree Shaking
+
+Webpack.optimize.uglifyJS
+
+##### CSS Tree Shaking
+
+Purifycss-webpack
+
+options paths: glob.sync([])
+
+移除没用到类的css
+
+##### 使用场景
+
+###### 常规优化
+
+###### 引入第三方库的某一个功能
+
+
+
+
+
+
+
+
 
 
 

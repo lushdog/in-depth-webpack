@@ -416,5 +416,21 @@ file-loader, url-loader, img-loader, postcss-sprites
 
 ##### 第三方JS库
 
+webpack.providePlugin
+
+import-loader
+
+window
+
+#### HTML处理
+
+##### 自动生成HTML
+
+##### 场景优化
+
+
+
+
+
 
 

@@ -398,14 +398,21 @@ options paths: glob.sync([])
 
 ###### 引入第三方库的某一个功能
 
+#### 文件处理
 
+##### 图片处理
 
+CSS中引入的图片
 
+自动合成雪碧图
 
+压缩图片
 
+Base64编码
 
+file-loader, url-loader, img-loader, postcss-sprites
 
+##### 字体文件
 
-
-
+##### 第三方JS库
 

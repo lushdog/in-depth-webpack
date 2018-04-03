@@ -419,6 +419,9 @@ file-loader, url-loader, img-loader, postcss-sprites
 webpack.providePlugin
 
 import-loader
+```javascript
+require('imports?$=jquery!./jqGreen')
+```
 
 window
 

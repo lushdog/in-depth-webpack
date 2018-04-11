@@ -1,8 +1,7 @@
 var webpack = require('webpack')
 var ExtractTextWebpackPlugin = require('extract-text-webpack-plugin')
 var path = require('path')
-var Purifycss = require('purifycss-webpack')
-var glob = require('glob-all')
+var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: {
@@ -10,7 +9,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, './dist'),
-    publicPath: './dist/',
+    publicPath: './',
     filename: '[name].bundle.js',
     chunkFilename: '[name].bundle.js'
   },
@@ -61,14 +60,13 @@ module.exports = {
       filename: '[name].min.css',
       allChunks: false
     }),
-
-    new Purifycss({
-      paths: glob.sync([
-        path.resolve(__dirname, './*.html'),
-        path.join(__dirname, './src/*.js')
-      ])
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: './index.html',
+      minify: {
+        collapseWhitespace: true
+      }
     }),
-
     new webpack.optimize.UglifyJsPlugin()
   ]
 }

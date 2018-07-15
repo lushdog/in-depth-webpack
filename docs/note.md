@@ -158,10 +158,10 @@ module.exports = {
 
 打包成的文件，一个或多个，自定义规则
 
-```javasc
+```javascript
 module.exports = {
   entry: {
-   	index: 'index.js',
+    index: 'index.js',
   	vendor: 'vendor.js'
   },
   output: {
@@ -182,7 +182,7 @@ module.exports = {
 
 文件相关：file-loader, url-loader
 
-```javas
+```javascript
 module.exports = {
   module: {
     rules: [
@@ -217,9 +217,7 @@ module.exports = {
 
 优化相关：CommonsChunkPlugin, UglifyWebpackPlugin
 
-功能相关：ExtractTextWebpackPlugin, HtmlWebpackPlugin,HotModuleReplacementPlugin,
-
-​		   CopyWebpackPlugin
+功能相关：ExtractTextWebpackPlugin, HtmlWebpackPlugin,HotModuleReplacementPlugin, CopyWebpackPlugin
 
 ##### 名词
 
@@ -259,7 +257,7 @@ es2015
 
 es2016
 
-es2016
+es2017
 
 env
 
@@ -271,7 +269,7 @@ targets 浏览器版本设置
 
 babel polyfill 
 
-`npm install babel-polyfill -save-dev`
+`npm install babel-polyfill -save`
 
 1.全局垫片，2.为应用准备。函数和方法转换。Generator, Set, Map, Array.from
 

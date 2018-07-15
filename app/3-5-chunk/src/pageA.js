@@ -9,10 +9,10 @@
 // }
 
 if (page === 'subPageA') {
-  import('./subPageA').then(function (subPageA) {
+  import(/* webpackChunkName: 'subPageA' */ './subPageA').then(function (subPageA) {
   })
 } else if (page === 'subPageB') {
-  import('./subPageB').then(function (subPageB) {
+  import(/* webpackChunkName: 'subPageB' */ './subPageB').then(function (subPageB) {
   })
 }
 
